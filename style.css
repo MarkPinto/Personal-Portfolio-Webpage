@@ -3,9 +3,17 @@
 	text-align: center;
 }
 
+.project-image
+{
+	height: 200px;
+	width: auto;
+}
+
 .project-tile
 {
-
+	display: grid;
+	grid-row-gap: 40px;
+	grid-template-columns: auto auto;
 }
 
 #github
@@ -33,7 +41,9 @@
 
 #projects
 {
-
+	background-color: pink;
+	margin-left: -6px;
+	margin-right: -6px;
 }
 
 #welcome-section
