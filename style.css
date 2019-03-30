@@ -1,6 +1,20 @@
+body
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -22px;
+}
+
 .center
 {
 	text-align: center;
+}
+
+.nav-link
+{
+	color: #ffffff;
+	font-size: 1.5em;
+	text-decoration: none;
 }
 
 .project-image
@@ -14,6 +28,11 @@
 	display: grid;
 	grid-row-gap: 40px;
 	grid-template-columns: auto auto;
+}
+
+.white-text
+{
+	color: #ffffff;
 }
 
 #github
@@ -31,7 +50,9 @@
 
 #more
 {
-
+	background-color: #00b0ff;
+	margin-top: -22px;
+	margin-bottom: -8px;
 }
 
 #profile-link
@@ -41,19 +62,22 @@
 
 #projects
 {
-	background-color: pink;
-	margin-left: -6px;
-	margin-right: -6px;
+	background-color: #0081cb;
+	/*margin-left: -6px;*/
+	/*margin-right: -6px;*/
 }
 
 #welcome-section
 {
+	background-image: url("./images/header.jpg");
+	background-size: cover;
 	/*Used vh which is a
 	 pretty useful unit,
 	 it is relative to 
 	 1% of the height of
 	 the viewport*/
 	height: 100vh;
+	margin-bottom: -22px;
 }
 
 @media(max-width: 900px)
