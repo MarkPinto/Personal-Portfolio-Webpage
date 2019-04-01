@@ -1,8 +1,39 @@
+@font-face
+{
+	font-family: Roboto_Slab_Regular;
+	src: url(./fonts/RobotoSlab-Regular.ttf);
+}
+
+a
+{
+	text-decoration: none;
+}
+
 body
 {
+	font-family: Roboto_Slab_Regular;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: -22px;
+}
+
+.box
+{
+	/*Pushes box & caption text
+	into the middle of image*/
+	position: relative;
+	bottom: 3.4em;
+	
+	/*Sets size of box*/
+	height: 50px;
+	width: 335px;
+	
+	/*Sets div in proper location
+	rather than all the way to the
+	left*/
+	display: inline-block;
+	
+	background-color: rgba(0,0,0,0.5);
 }
 
 .center
@@ -10,11 +41,18 @@ body
 	text-align: center;
 }
 
+.image-caption
+{
+	color: #ffffff;
+	position: relative;
+	text-shadow: 2px 2px #000000;
+}
+
 .nav-link
 {
 	color: #ffffff;
 	font-size: 1.5em;
-	text-decoration: none;
+	padding-right: 1em;
 }
 
 .project-image
@@ -26,7 +64,7 @@ body
 .project-tile
 {
 	display: grid;
-	grid-row-gap: 40px;
+	grid-row-gap: 1em;
 	grid-template-columns: auto auto;
 }
 
@@ -45,7 +83,7 @@ body
 {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 3%;
 }
 
 #more
@@ -70,6 +108,9 @@ body
 #welcome-section
 {
 	background-image: url("./images/header.jpg");
+	/*Used to keep background image centered when
+	resizing browser window*/
+	background-position: center center;
 	background-size: cover;
 	/*Used vh which is a
 	 pretty useful unit,
