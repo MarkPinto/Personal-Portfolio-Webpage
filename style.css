@@ -53,6 +53,13 @@ body
 	color: #ffffff;
 	font-size: 1.5em;
 	padding-right: 1em;
+	text-shadow: 2px 2px #000000;
+}
+
+.page-grid
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
 
 .project-image
@@ -73,10 +80,30 @@ body
 	color: #ffffff;
 }
 
+#codepen
+{
+	height: 60px;
+	width: auto;
+}
+
+#freecodecamp
+{
+	height: 70px;
+	width: auto;
+}
+
 #github
 {
 	height: 80px;
 	width: auto;
+}
+
+#name
+{
+	position: relative;
+	top: 15em;
+
+	text-shadow: 2px 2px #000000;
 }
 
 #navbar
@@ -105,6 +132,14 @@ body
 	/*margin-right: -6px;*/
 }
 
+#title
+{
+	position: relative;
+	top: 20em;
+
+	text-shadow: 2px 2px #000000;
+}
+
 #welcome-section
 {
 	background-image: url("./images/header.jpg");
@@ -121,11 +156,19 @@ body
 	margin-bottom: -22px;
 }
 
-@media(max-width: 900px)
+@media(max-width: 1136px)
 {
-	/*Place holder*/
-	p
+	.page-grid
 	{
-		color: black;
+		display: grid;
+		grid-row-gap: 2em;
+		grid-template-columns: auto;
 	}
+
+	.project-tile
+{
+	display: grid;
+	grid-row-gap: 1em;
+	grid-template-columns: auto;
+}
 }
